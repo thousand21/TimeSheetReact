@@ -1,24 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import Picker from './Picker';
+import Ajouter from './Ajouter';
+import Form from'./Form';
+import TimeSheet from './TimeSheet';
+import NavBar from './components/NavBar';
+import './fontawesome/index';
 
 function App() {
+  let dateAujourdhui= new Date;
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <NavBar/>
+      <div>
+        <h3>Nom: Van Tran</h3>
+
+      </div>
+      <div className="mr-4 btn-group " role="group">
+        
+         <div >
+         <Picker />
+         </div>
+         
+        <Ajouter/>
+        
     </div>
+    </div>
+
+<Form/>
+    
+
+
+    <div className="parent">
+      
+        <TimeSheet/>
+        
+
+      </div>
+    </div>
+    
+    
   );
 }
 

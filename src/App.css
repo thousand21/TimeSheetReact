@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+.aka:hover{
+  filter: brightness(70%);
+}
+.aka1:hover{
+  filter: brightness(70%);
+}
+.aka2:hover{
+  filter: brightness(70%);
+}
+.displayno{
+  display: none;
+}
+.displayyes{
+  display: block;
+}
+.ntm{
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+.tresflex{
+  display: flex;
+}
+input{
+  width: 50%;
+}
+.ok{
+  margin-top: 20px;
+  width: 10%;
+}
